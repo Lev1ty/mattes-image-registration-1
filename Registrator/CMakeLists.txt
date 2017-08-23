@@ -1,0 +1,3 @@
+ADD_LIBRARY(Registrator Registrator.cpp)
+TARGET_INCLUDE_DIRECTORIES(Registrator PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+TARGET_LINK_LIBRARIES(Registrator Wrapper)
