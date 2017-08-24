@@ -1,0 +1,14 @@
+digraph "/home/adam/Desktop/reg/Observer" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_ba92baaf72c88f15dbbb6c3d8c2c3d3d [shape=box, label="Observer", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ba92baaf72c88f15dbbb6c3d8c2c3d3d.html"];
+  dir_db3c996ab4e4f06b0754c16fcab9ceab [shape=box label="Wrapper" URL="dir_db3c996ab4e4f06b0754c16fcab9ceab.html"];
+  dir_41a59422fcad2a1896068ed2599ccf01 [shape=box label="ITKtoVTK" URL="dir_41a59422fcad2a1896068ed2599ccf01.html"];
+  dir_2d7cc52dcf9f515cb6358a1ff05d9e6b [shape=box label="Visualizer" URL="dir_2d7cc52dcf9f515cb6358a1ff05d9e6b.html"];
+  dir_41a59422fcad2a1896068ed2599ccf01->dir_db3c996ab4e4f06b0754c16fcab9ceab [headlabel="1", labeldistance=1.5 headhref="dir_000015_000020.html"];
+  dir_2d7cc52dcf9f515cb6358a1ff05d9e6b->dir_41a59422fcad2a1896068ed2599ccf01 [headlabel="1", labeldistance=1.5 headhref="dir_000019_000015.html"];
+  dir_ba92baaf72c88f15dbbb6c3d8c2c3d3d->dir_db3c996ab4e4f06b0754c16fcab9ceab [headlabel="1", labeldistance=1.5 headhref="dir_000016_000020.html"];
+  dir_ba92baaf72c88f15dbbb6c3d8c2c3d3d->dir_41a59422fcad2a1896068ed2599ccf01 [headlabel="1", labeldistance=1.5 headhref="dir_000016_000015.html"];
+  dir_ba92baaf72c88f15dbbb6c3d8c2c3d3d->dir_2d7cc52dcf9f515cb6358a1ff05d9e6b [headlabel="1", labeldistance=1.5 headhref="dir_000016_000019.html"];
+}

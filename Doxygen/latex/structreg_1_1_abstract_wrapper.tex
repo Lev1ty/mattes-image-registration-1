@@ -1,0 +1,153 @@
+\hypertarget{structreg_1_1_abstract_wrapper}{}\section{reg\+:\+:Abstract\+Wrapper$<$ T, Container $>$ Struct Template Reference}
+\label{structreg_1_1_abstract_wrapper}\index{reg\+::\+Abstract\+Wrapper$<$ T, Container $>$@{reg\+::\+Abstract\+Wrapper$<$ T, Container $>$}}
+
+
+abstract class for all \hyperlink{structreg_1_1_wrapper}{Wrapper} classes  
+
+
+
+
+{\ttfamily \#include $<$Wrapper.\+h$>$}
+
+Inheritance diagram for reg\+:\+:Abstract\+Wrapper$<$ T, Container $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structreg_1_1_abstract_wrapper}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structreg_1_1_abstract_wrapper_a65e2282260e636ac1956862c158caa59}{self\+\_\+type} = T
+\begin{DoxyCompactList}\small\item\em for introspection \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structreg_1_1_abstract_wrapper_a1b932145981f0c3f71466707725d772f}{Abstract\+Wrapper} ()
+\begin{DoxyCompactList}\small\item\em R\+T\+TI. \end{DoxyCompactList}\item 
+virtual T $\ast$ \hyperlink{structreg_1_1_abstract_wrapper_a88e7079432573b09a5cd695be34e9147}{Get} () const noexcept=0
+\item 
+virtual void \hyperlink{structreg_1_1_abstract_wrapper_af017f2af039fd5b940345e930e4bb397}{Set} (T $\ast$) noexcept=0
+\item 
+virtual void \hyperlink{structreg_1_1_abstract_wrapper_aad461ca147a0a7fcfd4f8662994742f3}{Allocate} () noexcept=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Container \hyperlink{structreg_1_1_abstract_wrapper_a76a3713665e76d5ef8437681c7f309aa}{container\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T, typename Container$>$\newline
+struct reg\+::\+Abstract\+Wrapper$<$ T, Container $>$}
+
+abstract class for all \hyperlink{structreg_1_1_wrapper}{Wrapper} classes 
+
+$<$ check if \hyperlink{structreg_1_1_wrapper}{Wrapper} inherits any specialized \hyperlink{structreg_1_1_wrapper_base}{Wrapper\+Base} structs
+
+encapsulates data 
+\begin{DoxyParams}{Parameters}
+{\em T} & contained type \\
+\hline
+{\em Container} & container type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+R\+T\+TI 
+\end{DoxyNote}
+
+
+Definition at line 21 of file Wrapper.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structreg_1_1_abstract_wrapper_a65e2282260e636ac1956862c158caa59}\label{structreg_1_1_abstract_wrapper_a65e2282260e636ac1956862c158caa59}} 
+\index{reg\+::\+Abstract\+Wrapper@{reg\+::\+Abstract\+Wrapper}!self\+\_\+type@{self\+\_\+type}}
+\index{self\+\_\+type@{self\+\_\+type}!reg\+::\+Abstract\+Wrapper@{reg\+::\+Abstract\+Wrapper}}
+\subsubsection{\texorpdfstring{self\+\_\+type}{self\_type}}
+{\footnotesize\ttfamily template$<$typename T, typename Container$>$ \\
+using \hyperlink{structreg_1_1_abstract_wrapper}{reg\+::\+Abstract\+Wrapper}$<$ T, Container $>$\+::\hyperlink{structreg_1_1_abstract_wrapper_a65e2282260e636ac1956862c158caa59}{self\+\_\+type} =  T}
+
+
+
+for introspection 
+
+
+
+Definition at line 25 of file Wrapper.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structreg_1_1_abstract_wrapper_a1b932145981f0c3f71466707725d772f}\label{structreg_1_1_abstract_wrapper_a1b932145981f0c3f71466707725d772f}} 
+\index{reg\+::\+Abstract\+Wrapper@{reg\+::\+Abstract\+Wrapper}!Abstract\+Wrapper@{Abstract\+Wrapper}}
+\index{Abstract\+Wrapper@{Abstract\+Wrapper}!reg\+::\+Abstract\+Wrapper@{reg\+::\+Abstract\+Wrapper}}
+\subsubsection{\texorpdfstring{Abstract\+Wrapper()}{AbstractWrapper()}}
+{\footnotesize\ttfamily template$<$typename T, typename Container$>$ \\
+\hyperlink{structreg_1_1_abstract_wrapper}{reg\+::\+Abstract\+Wrapper}$<$ T, Container $>$\+::\hyperlink{structreg_1_1_abstract_wrapper}{Abstract\+Wrapper} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+R\+T\+TI. 
+
+
+
+Definition at line 28 of file Wrapper.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structreg_1_1_abstract_wrapper_aad461ca147a0a7fcfd4f8662994742f3}\label{structreg_1_1_abstract_wrapper_aad461ca147a0a7fcfd4f8662994742f3}} 
+\index{reg\+::\+Abstract\+Wrapper@{reg\+::\+Abstract\+Wrapper}!Allocate@{Allocate}}
+\index{Allocate@{Allocate}!reg\+::\+Abstract\+Wrapper@{reg\+::\+Abstract\+Wrapper}}
+\subsubsection{\texorpdfstring{Allocate()}{Allocate()}}
+{\footnotesize\ttfamily template$<$typename T, typename Container$>$ \\
+virtual void \hyperlink{structreg_1_1_abstract_wrapper}{reg\+::\+Abstract\+Wrapper}$<$ T, Container $>$\+::Allocate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Implemented in \hyperlink{structreg_1_1_wrapper_base_3_01_t_00_01vtk_smart_pointer_3_01_t_01_4_01_4_a3b2609bc1666d9f2dbfe789100889bdc}{reg\+::\+Wrapper\+Base$<$ T, vtk\+Smart\+Pointer$<$ T $>$ $>$}, \hyperlink{structreg_1_1_wrapper_base_3_01_t_00_01itk_1_1_smart_pointer_3_01_t_01_4_01_4_a10fb689e5da772970c04d312d600868d}{reg\+::\+Wrapper\+Base$<$ T, itk\+::\+Smart\+Pointer$<$ T $>$ $>$}, and \hyperlink{structreg_1_1_wrapper_base_3_01_t_00_01std_1_1unique__ptr_3_01_t_01_4_01_4_a1b7e67476da7973f319d68e65543d1be}{reg\+::\+Wrapper\+Base$<$ T, std\+::unique\+\_\+ptr$<$ T $>$ $>$}.
+
+\mbox{\Hypertarget{structreg_1_1_abstract_wrapper_a88e7079432573b09a5cd695be34e9147}\label{structreg_1_1_abstract_wrapper_a88e7079432573b09a5cd695be34e9147}} 
+\index{reg\+::\+Abstract\+Wrapper@{reg\+::\+Abstract\+Wrapper}!Get@{Get}}
+\index{Get@{Get}!reg\+::\+Abstract\+Wrapper@{reg\+::\+Abstract\+Wrapper}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily template$<$typename T, typename Container$>$ \\
+virtual T$\ast$ \hyperlink{structreg_1_1_abstract_wrapper}{reg\+::\+Abstract\+Wrapper}$<$ T, Container $>$\+::Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Implemented in \hyperlink{structreg_1_1_wrapper_base_3_01_t_00_01vtk_smart_pointer_3_01_t_01_4_01_4_a61bd745924ef0582ee61ae174ed7479f}{reg\+::\+Wrapper\+Base$<$ T, vtk\+Smart\+Pointer$<$ T $>$ $>$}, \hyperlink{structreg_1_1_wrapper_base_3_01_t_00_01itk_1_1_smart_pointer_3_01_t_01_4_01_4_ac2d57c43556c87aa45dcafd2c8a9cb47}{reg\+::\+Wrapper\+Base$<$ T, itk\+::\+Smart\+Pointer$<$ T $>$ $>$}, and \hyperlink{structreg_1_1_wrapper_base_3_01_t_00_01std_1_1unique__ptr_3_01_t_01_4_01_4_a9f4701d60f0dee6b61ae4046633f3ebe}{reg\+::\+Wrapper\+Base$<$ T, std\+::unique\+\_\+ptr$<$ T $>$ $>$}.
+
+\mbox{\Hypertarget{structreg_1_1_abstract_wrapper_af017f2af039fd5b940345e930e4bb397}\label{structreg_1_1_abstract_wrapper_af017f2af039fd5b940345e930e4bb397}} 
+\index{reg\+::\+Abstract\+Wrapper@{reg\+::\+Abstract\+Wrapper}!Set@{Set}}
+\index{Set@{Set}!reg\+::\+Abstract\+Wrapper@{reg\+::\+Abstract\+Wrapper}}
+\subsubsection{\texorpdfstring{Set()}{Set()}}
+{\footnotesize\ttfamily template$<$typename T, typename Container$>$ \\
+virtual void \hyperlink{structreg_1_1_abstract_wrapper}{reg\+::\+Abstract\+Wrapper}$<$ T, Container $>$\+::Set (\begin{DoxyParamCaption}\item[{T $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Implemented in \hyperlink{structreg_1_1_wrapper_base_3_01_t_00_01vtk_smart_pointer_3_01_t_01_4_01_4_aa066a74ca5abf0e13fd3ed62f0508e32}{reg\+::\+Wrapper\+Base$<$ T, vtk\+Smart\+Pointer$<$ T $>$ $>$}, \hyperlink{structreg_1_1_wrapper_base_3_01_t_00_01itk_1_1_smart_pointer_3_01_t_01_4_01_4_a9a9bcfbe7236f66cb355f929aeeca281}{reg\+::\+Wrapper\+Base$<$ T, itk\+::\+Smart\+Pointer$<$ T $>$ $>$}, and \hyperlink{structreg_1_1_wrapper_base_3_01_t_00_01std_1_1unique__ptr_3_01_t_01_4_01_4_a280dc1e6a85e2a95eaa849a45169942f}{reg\+::\+Wrapper\+Base$<$ T, std\+::unique\+\_\+ptr$<$ T $>$ $>$}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structreg_1_1_abstract_wrapper_a76a3713665e76d5ef8437681c7f309aa}\label{structreg_1_1_abstract_wrapper_a76a3713665e76d5ef8437681c7f309aa}} 
+\index{reg\+::\+Abstract\+Wrapper@{reg\+::\+Abstract\+Wrapper}!container\+\_\+@{container\+\_\+}}
+\index{container\+\_\+@{container\+\_\+}!reg\+::\+Abstract\+Wrapper@{reg\+::\+Abstract\+Wrapper}}
+\subsubsection{\texorpdfstring{container\+\_\+}{container\_}}
+{\footnotesize\ttfamily template$<$typename T, typename Container$>$ \\
+Container \hyperlink{structreg_1_1_abstract_wrapper}{reg\+::\+Abstract\+Wrapper}$<$ T, Container $>$\+::container\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 35 of file Wrapper.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/adam/\+Desktop/reg/\+Wrapper/\hyperlink{_wrapper_8h}{Wrapper.\+h}\end{DoxyCompactItemize}

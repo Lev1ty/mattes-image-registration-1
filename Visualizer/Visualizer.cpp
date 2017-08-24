@@ -1,31 +1,36 @@
 #include "Visualizer.h"
 
-reg::Visualizer::Visualizer(vtkImageData* image) {
+reg::Visualizer::Visualizer(vtkImageData *image) {
   Initialize(image);
   Execute(image);
 }
 
-void reg::Visualizer::Execute(vtkImageData* image) {
+void reg::Visualizer::Execute(vtkImageData *image) {
   Wrapper<vtkRenderWindow>::Get()->AddRenderer(Wrapper<vtkRenderer>::Get());
   Wrapper<vtkRenderWindowInteractor>::Get()->SetRenderWindow(
       Wrapper<vtkRenderWindow>::Get());
   Wrapper<vtkRenderWindow>::Get()->Render();
   Wrapper<vtkImageShiftScale>::Get()->SetInputData(
       Wrapper<vtkImageData>::Get());
-  Wrapper<vtkImageShiftScale>::Get()->SetScale(5);
+  Wrapper<vtkImageShiftScale>::Get()->SetScale(
+      5); ///< increase brightness by a factor of 5
   Wrapper<vtkImageShiftScale>::Get()->Update();
   Wrapper<vtkImageThreshold>::Get()->SetInputData(
       Wrapper<vtkImageShiftScale>::Get()->GetOutput());
   Wrapper<vtkImageThreshold>::Get()->ThresholdBetween(
-      110, std::numeric_limits<double>::max());
-  Wrapper<vtkImageThreshold>::Get()->ReplaceOutOn();
-  Wrapper<vtkImageThreshold>::Get()->SetOutValue(0);
+      110,
+      std::numeric_limits<double>::max()); ///< inclusive range of grey values
+  Wrapper<vtkImageThreshold>::Get()
+      ->ReplaceOutOn(); ///< specify replace values not in inclusive range
+  Wrapper<vtkImageThreshold>::Get()->SetOutValue(
+      0); ///< set non-included values to 0
   Wrapper<vtkImageThreshold>::Get()->Update();
   Wrapper<vtkSmartVolumeMapper>::Get()->SetBlendModeToComposite();
   // Wrapper<vtkSmartVolumeMapper>::Get()->SetInputData(Wrapper<vtkImageThreshold>::Get()->GetOutput());
   Wrapper<vtkSmartVolumeMapper>::Get()->SetInputData(
       Wrapper<vtkImageData>::Get());
-  Wrapper<vtkVolumeProperty>::Get()->SetScalarOpacity(CompositeOpacity::Get());
+  Wrapper<vtkVolumeProperty>::Get()->SetScalarOpacity(
+      CompositeOpacity::Get()); ///< explicitly specify no opacity
   std::cout << *Wrapper<vtkVolumeProperty>::Get()->GetScalarOpacity()
             << std::endl;
   Wrapper<vtkVolumeProperty>::Get()->ShadeOff();
@@ -39,7 +44,7 @@ void reg::Visualizer::Execute(vtkImageData* image) {
   Wrapper<vtkRenderWindowInteractor>::Get()->Start();
 }
 
-void reg::Visualizer::Initialize(vtkImageData* image) {
+void reg::Visualizer::Initialize(vtkImageData *image) {
   Wrapper<vtkImageData>::Set(image);
   Wrapper<vtkRenderer>::Allocate();
   Wrapper<vtkRenderWindow>::Allocate();

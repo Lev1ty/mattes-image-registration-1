@@ -1,0 +1,12 @@
+digraph "reg::WrapperBase&lt; T, itk::SmartPointer&lt; T &gt; &gt;"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="reg::WrapperBase\< T,\l itk::SmartPointer\< T \> \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="reg::AbstractWrapper\l\< T, itk::SmartPointer\l\< T \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structreg_1_1_abstract_wrapper.html"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="reg::CHECK\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structreg_1_1_c_h_e_c_k.html",tooltip="error checking class "];
+  Node3 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="std::true_type",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

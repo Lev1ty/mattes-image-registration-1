@@ -1,0 +1,21 @@
+digraph "reg::CHECK&lt; T &gt;"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="reg::CHECK\< T \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="AbstractWrapper\< T,\l itk::SmartPointer\< T \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structreg_1_1_abstract_wrapper.html"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="reg::WrapperBase\< T,\l itk::SmartPointer\< T \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structreg_1_1_wrapper_base_3_01_t_00_01itk_1_1_smart_pointer_3_01_t_01_4_01_4.html"];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AbstractWrapper\< T,\l std::unique_ptr\< T \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structreg_1_1_abstract_wrapper.html"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="reg::WrapperBase\< T,\l std::unique_ptr\< T \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structreg_1_1_wrapper_base_3_01_t_00_01std_1_1unique__ptr_3_01_t_01_4_01_4.html"];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AbstractWrapper\< T,\l vtkSmartPointer\< T \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structreg_1_1_abstract_wrapper.html"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="reg::WrapperBase\< T,\l vtkSmartPointer\< T \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structreg_1_1_wrapper_base_3_01_t_00_01vtk_smart_pointer_3_01_t_01_4_01_4.html"];
+  Node0 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="reg::AbstractWrapper\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structreg_1_1_abstract_wrapper.html",tooltip="abstract class for all Wrapper classes "];
+}

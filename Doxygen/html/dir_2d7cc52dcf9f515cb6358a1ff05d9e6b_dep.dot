@@ -1,0 +1,8 @@
+digraph "/home/adam/Desktop/reg/Visualizer" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_2d7cc52dcf9f515cb6358a1ff05d9e6b [shape=box, label="Visualizer", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_2d7cc52dcf9f515cb6358a1ff05d9e6b.html"];
+  dir_41a59422fcad2a1896068ed2599ccf01 [shape=box label="ITKtoVTK" URL="dir_41a59422fcad2a1896068ed2599ccf01.html"];
+  dir_2d7cc52dcf9f515cb6358a1ff05d9e6b->dir_41a59422fcad2a1896068ed2599ccf01 [headlabel="1", labeldistance=1.5 headhref="dir_000019_000015.html"];
+}

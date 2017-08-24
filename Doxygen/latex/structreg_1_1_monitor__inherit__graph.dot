@@ -1,0 +1,13 @@
+digraph "reg::Monitor"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="reg::Monitor",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 [label="reg::Wrapper\< CommandIteration\lUpdate \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structreg_1_1_wrapper.html"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="std::conditional::type\l\< is_stl\< CommandIterationUpdate\l \>::value, WrapperBase\< CommandIteration\lUpdate, std::unique_ptr\< CommandIterationUpdate\l \> \>, std::conditional\< std::is_base_of\< itk\l::Object, CommandIterationUpdate \>::value, WrapperBase\l\< CommandIterationUpdate, itk::SmartPointer\< CommandIterationUpdate\l \> \>, std::conditional\< std::is_base_of\< vtkObject, CommandIterationUpdate\l \>::value, WrapperBase\< CommandIterationUpdate, vtkSmartPointer\< CommandIterationUpdate\l \> \>, WrapperBase\< void, void \> \>::type \>::type \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="reg::Registrator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structreg_1_1_registrator.html"];
+}

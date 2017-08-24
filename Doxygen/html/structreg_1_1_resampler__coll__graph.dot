@@ -1,0 +1,11 @@
+digraph "reg::Resampler"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node4 [label="reg::Resampler",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="reg::Wrapper\< itk::\lResampleImageFilter\l\< Moving::self_type,\l Fixed::self_type \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structreg_1_1_wrapper.html"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="std::conditional::type\l\< is_stl\< itk::ResampleImage\lFilter\< Moving::self_type,\l Fixed::self_type \> \>::value,\l WrapperBase\< itk::ResampleImageFilter\l\< Moving::self_type, Fixed::self_type\l \>, std::unique_ptr\< itk::ResampleImageFilter\l\< Moving::self_type, Fixed::self_type \> \>\l \>, std::conditional\< std::is_base_of\< itk\l::Object, itk::ResampleImageFilter\< Moving::\lself_type, Fixed::self_type \> \>::value, WrapperBase\l\< itk::ResampleImageFilter\< Moving::self_type, Fixed\l::self_type \>, itk::SmartPointer\< itk::ResampleImageFilter\l\< Moving::self_type, Fixed::self_type \> \> \>, std::conditional\l\< std::is_base_of\< vtkObject, itk::ResampleImageFilter\< Moving\l::self_type, Fixed::self_type \> \>::value, WrapperBase\< itk::ResampleImageFilter\l\< Moving::self_type, Fixed::self_type \>, vtkSmartPointer\< itk::ResampleImageFilter\l\< Moving::self_type, Fixed::self_type \> \> \>, WrapperBase\< void, void \> \>::type \>::type \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

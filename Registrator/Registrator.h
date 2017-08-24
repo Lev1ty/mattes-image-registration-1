@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Observer.h"
+#include "Wrapper.h"
 #include <itkCenteredTransformInitializer.h>
 #include <itkGradientDescentOptimizerv4.h>
 #include <itkImage.h>
@@ -8,7 +10,6 @@
 #include <itkMattesMutualInformationImageToImageMetricv4.h>
 #include <itkResampleImageFilter.h>
 #include <itkVersorRigid3DTransform.h>
-#include "Wrapper.h"
 
 namespace reg {
 using PIXEL = double;
@@ -21,7 +22,7 @@ struct Fixed : Wrapper<itk::Image<PIXEL, DIMENSIONS>> {};
 struct Moving : Wrapper<itk::Image<PIXEL, DIMENSIONS>> {};
 
 struct Transform
-    : Wrapper<itk::VersorRigid3DTransform<PIXEL>>  ///< \warning require
+    : Wrapper<itk::VersorRigid3DTransform<PIXEL>> ///< \warning require
 /// manipulation when changing
 /// DIMENSIONS
 {};
@@ -40,8 +41,8 @@ struct Optimizer : Wrapper<itk::GradientDescentOptimizerv4Template<PIXEL>> {};
 
 struct Resampler
     : Wrapper<itk::ResampleImageFilter<Moving::self_type,
-                                       Fixed::self_type>>  ///< \note optional
-                                                           /// template
+                                       Fixed::self_type>> ///< \note optional
+                                                          /// template
 /// parameters not
 /// explicitly
 /// declared
@@ -50,6 +51,8 @@ struct Resampler
 struct TransformInitializer
     : Wrapper<itk::CenteredTransformInitializer<
           Transform::self_type, Fixed::self_type, Moving::self_type>> {};
+
+struct Monitor : Wrapper<CommandIterationUpdate> {};
 
 struct Registrator : Combined,
                      Fixed,
@@ -60,7 +63,8 @@ struct Registrator : Combined,
                      Optimizer,
                      Resampler,
                      Transform,
-                     TransformInitializer {
+                     TransformInitializer,
+                     Monitor {
   Registrator() = default;
   Registrator(Fixed::self_type *, Moving::self_type *);
   void Initialize(Fixed::self_type *, Moving::self_type *);

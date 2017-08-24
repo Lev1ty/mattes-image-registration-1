@@ -1,13 +1,13 @@
 #include "Registrator.h"
 
-reg::Registrator::Registrator(Fixed::self_type* fixed,
-                              Moving::self_type* moving) {
+reg::Registrator::Registrator(Fixed::self_type *fixed,
+                              Moving::self_type *moving) {
   Initialize(fixed, moving);
   Execute(fixed, moving);
 }
 
-void reg::Registrator::Initialize(Fixed::self_type* fixed,
-                                  Moving::self_type* moving) {
+void reg::Registrator::Initialize(Fixed::self_type *fixed,
+                                  Moving::self_type *moving) {
   Fixed::Set(fixed);
   Interpolator::Allocate();
   Method::Allocate();
@@ -17,10 +17,11 @@ void reg::Registrator::Initialize(Fixed::self_type* fixed,
   Resampler::Allocate();
   Transform::Allocate();
   TransformInitializer::Allocate();
+  Monitor::Allocate();
 }
 
-void reg::Registrator::Execute(Fixed::self_type* fixed,
-                               Moving::self_type* moving) {
+void reg::Registrator::Execute(Fixed::self_type *fixed,
+                               Moving::self_type *moving) {
   Metric::Get()->SetNumberOfHistogramBins(50);
 
   TransformInitializer::Get()->SetFixedImage(Fixed::Get());
@@ -33,6 +34,7 @@ void reg::Registrator::Execute(Fixed::self_type* fixed,
   Optimizer::Get()->SetNumberOfIterations(1000);
   Optimizer::Get()->SetMinimumConvergenceValue(1e-6);
   Optimizer::Get()->SetConvergenceWindowSize(10);
+  Optimizer::Get()->AddObserver(itk::IterationEvent(), Monitor::Get());
 
   Method::Get()->SetMetric(Metric::Get());
   Method::Get()->SetMetricSamplingStrategy(
@@ -69,10 +71,11 @@ void reg::Registrator::Execute(Fixed::self_type* fixed,
 
   Resampler::Get()->SetInput(Moving::Get());
   Resampler::Get()->SetInterpolator(Interpolator::Get());
-  Resampler::Get()->SetOutputSpacing(Fixed::Get()->GetSpacing());
-  Resampler::Get()->SetOutputOrigin(Fixed::Get()->GetOrigin());
-  Resampler::Get()->SetOutputDirection(Fixed::Get()->GetDirection());
-  Resampler::Get()->SetSize(Fixed::Get()->GetLargestPossibleRegion().GetSize());
+  Resampler::Get()->SetOutputSpacing(Moving::Get()->GetSpacing());
+  Resampler::Get()->SetOutputOrigin(Moving::Get()->GetOrigin());
+  Resampler::Get()->SetOutputDirection(Moving::Get()->GetDirection());
+  Resampler::Get()->SetSize(
+      Moving::Get()->GetLargestPossibleRegion().GetSize());
   Resampler::Get()->SetTransform(Transform::Get());
 
   Combined::Set(Resampler::Get()->GetOutput());

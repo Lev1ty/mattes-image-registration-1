@@ -1,0 +1,13 @@
+digraph "reg::Transform"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="reg::Transform",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="reg::Wrapper\< itk::\lVersorRigid3DTransform\l\< PIXEL \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structreg_1_1_wrapper.html"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="std::conditional::type\l\< is_stl\< itk::VersorRigid3DTransform\l\< PIXEL \> \>::value, WrapperBase\l\< itk::VersorRigid3DTransform\< PIXEL\l \>, std::unique_ptr\< itk::VersorRigid3DTransform\l\< PIXEL \> \> \>, std::conditional\< std::is_base\l_of\< itk::Object, itk::VersorRigid3DTransform\l\< PIXEL \> \>::value, WrapperBase\< itk::VersorRigid3DTransform\l\< PIXEL \>, itk::SmartPointer\< itk::VersorRigid3DTransform\l\< PIXEL \> \> \>, std::conditional\< std::is_base_of\< vtkObject,\l itk::VersorRigid3DTransform\< PIXEL \> \>::value, WrapperBase\l\< itk::VersorRigid3DTransform\< PIXEL \>, vtkSmartPointer\< itk\l::VersorRigid3DTransform\< PIXEL \> \> \>, WrapperBase\< void, void\l \> \>::type \>::type \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="reg::Registrator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structreg_1_1_registrator.html"];
+}

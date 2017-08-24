@@ -1,0 +1,41 @@
+digraph "/home/adam/Desktop/reg/Wrapper/Wrapper.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node13 [label="/home/adam/Desktop\l/reg/Wrapper/Wrapper.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="/home/adam/Desktop\l/reg/ITKtoVTK/ITKtoVTK.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_i_t_kto_v_t_k_8h.html"];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="/home/adam/Desktop\l/reg/Entry.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_entry_8cpp.html"];
+  Node14 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="/home/adam/Desktop\l/reg/ITKtoVTK/ITKtoVTK.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_i_t_kto_v_t_k_8cpp.html"];
+  Node14 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="/home/adam/Desktop\l/reg/Observer/Observer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_observer_8h.html"];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="/home/adam/Desktop\l/reg/Observer/Observer.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_observer_8cpp.html"];
+  Node17 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="/home/adam/Desktop\l/reg/Registrator/Registrator.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_registrator_8h.html"];
+  Node19 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="/home/adam/Desktop\l/reg/Registrator/Registrator.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_registrator_8cpp.html"];
+  Node14 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="/home/adam/Desktop\l/reg/Visualizer/Visualizer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_visualizer_8h.html"];
+  Node21 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="/home/adam/Desktop\l/reg/Visualizer/Visualizer.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_visualizer_8cpp.html"];
+  Node13 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="/home/adam/Desktop\l/reg/Reader/Reader.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_reader_8h.html"];
+  Node23 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="/home/adam/Desktop\l/reg/Reader/Reader.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_reader_8cpp.html"];
+  Node13 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 -> Node25 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node25 [label="/home/adam/Desktop\l/reg/Wrapper/Wrapper.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_wrapper_8cpp.html"];
+  Node13 -> Node26 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 [label="/home/adam/Desktop\l/reg/Writer/Writer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_writer_8h.html"];
+  Node26 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 -> Node27 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node27 [label="/home/adam/Desktop\l/reg/Writer/Writer.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_writer_8cpp.html"];
+}

@@ -1,0 +1,11 @@
+digraph "/home/adam/Desktop/reg/Registrator" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_223804ec76ff60708474e40b2a3243f2 [shape=box, label="Registrator", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_223804ec76ff60708474e40b2a3243f2.html"];
+  dir_db3c996ab4e4f06b0754c16fcab9ceab [shape=box label="Wrapper" URL="dir_db3c996ab4e4f06b0754c16fcab9ceab.html"];
+  dir_ba92baaf72c88f15dbbb6c3d8c2c3d3d [shape=box label="Observer" URL="dir_ba92baaf72c88f15dbbb6c3d8c2c3d3d.html"];
+  dir_223804ec76ff60708474e40b2a3243f2->dir_db3c996ab4e4f06b0754c16fcab9ceab [headlabel="1", labeldistance=1.5 headhref="dir_000018_000020.html"];
+  dir_223804ec76ff60708474e40b2a3243f2->dir_ba92baaf72c88f15dbbb6c3d8c2c3d3d [headlabel="1", labeldistance=1.5 headhref="dir_000018_000016.html"];
+  dir_ba92baaf72c88f15dbbb6c3d8c2c3d3d->dir_db3c996ab4e4f06b0754c16fcab9ceab [headlabel="1", labeldistance=1.5 headhref="dir_000016_000020.html"];
+}
